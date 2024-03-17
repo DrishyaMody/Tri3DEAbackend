@@ -2,7 +2,6 @@ from flask import Blueprint, jsonify  # jsonify creates an endpoint response obj
 from flask_restful import Api, Resource # used for REST API building
 import requests  # used for testing 
 import random
-
 from model.jokes import *
 
 joke_api = Blueprint('joke_api', __name__,
