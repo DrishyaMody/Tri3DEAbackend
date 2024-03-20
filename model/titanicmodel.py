@@ -28,12 +28,6 @@ td.dropna(inplace=True)
 X = td.drop('survived', axis=1) # all except 'survived'
 y = td['survived'] # only 'survived'
 
-# Split arrays in random train 70%, random test 30%, using stratified sampling (same proportion of survived in both sets) and a fixed random state (42
-# The number 42 is often used in examples and tutorials because of its cultural significance in fields like science fiction (it's the "Answer to the Ultimate Question of Life, The Universe, and Everything" in The Hitchhiker's Guide to the Galaxy by Douglas Adams). But in practice, the actual value doesn't matter; what's important is that it's set to a consistent value.
-# X_train is the DataFrame containing the features for the training set.
-# X_test is the DataFrame containing the features for the test set.
-# y-train is the 'survived' status for each passenger in the training set, corresponding to the X_train data.
-# y_test is the 'survived' status for each passenger in the test set, corresponding to the X_test data.
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # Train a decision tree classifier
