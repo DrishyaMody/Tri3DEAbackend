@@ -16,6 +16,7 @@ from api.user import user_api # Blueprint import api definition
 from api.player import player_api
 from api.titanicAPI import titanic_api
 from api.stockMLapi import stock_api
+from api.diamondapi import diamond_api
 # database migrations
 from model.users import initUsers
 from model.players import initPlayers
@@ -34,6 +35,7 @@ app.register_blueprint(user_api) # register api routes
 app.register_blueprint(player_api)
 app.register_blueprint(app_projects)
 app.register_blueprint(titanic_api)
+app.register_blueprint(diamond_api)
 app.register_blueprint(stock_api)
  # register app pages
 
